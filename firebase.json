@@ -1,0 +1,47 @@
+{
+  "emulators": {
+    "auth": {
+      "host": "localhost",
+      "port": 9100
+    },
+    "firestore": {
+      "host": "localhost",
+      "port": 8085,
+      "persistence": true
+    },
+    "database": {
+      "host": "localhost",
+      "port": 9005
+    },
+    "hosting": {
+      "host": "localhost",
+      "port": 5005
+    },
+    "storage": {
+      "host": "localhost",
+      "port": 9200
+    },
+    "ui": {
+      "enabled": true,
+      "host": "localhost",
+      "port": 4005
+    }
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  },
+  "hosting": {
+    "public": "public"
+  },
+  "singleProjectMode": true
+}
+
+
+

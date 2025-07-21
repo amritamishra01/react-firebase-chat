@@ -1,0 +1,131 @@
+/* .chatList{
+    .search{
+        display: flex  ;
+        align-items: center;    
+        gap:20px;
+        padding:20px;
+
+
+        .searchBar
+        {
+            flex:1;
+            background-color: rgba(17, 17, 74, 0.51);
+            display:flex;
+            align-items: center;
+            gap:20px;
+            border-radius:10px;
+            padding:10px;
+
+            input{
+                background-color: transparent;
+                border: none;
+                outline:none;
+                color:white;
+                flex:1;
+            }
+
+img{
+    width:20px;
+    height:20px;
+    cursor: pointer;
+}
+
+        }
+        .searchIcon{
+            width:36px;
+            height:36px;
+            cursor: pointer;
+            background-color:rgba(17, 25, 40, 0.5); 
+            padding:10px;
+            border-radius:10px;
+        }
+    } */
+    .chatListContainer {
+        background: rgba(17, 25, 40, 0.75);
+        backdrop-filter: blur(19px) saturate(180%);
+        -webkit-backdrop-filter: blur(19px) saturate(180%);
+        border-radius: 10px;
+        padding: 20px;
+        height: 100%;
+        overflow-y: auto;
+      }
+      
+      .chatList {
+        display: flex;
+        flex-direction: column;
+      
+        .search {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          margin-bottom: 20px;
+      
+          .searchBar {
+            flex: 1;
+            background-color: rgba(17, 17, 74, 0.51);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-radius: 10px;
+            padding: 10px;
+      
+            input {
+              background-color: transparent;
+              border: none;
+              outline: none;
+              color: white;
+              flex: 1;
+            }
+      
+            img {
+              width: 20px;
+              height: 20px;
+              cursor: pointer;
+            }
+          }
+      
+          .searchIcon {
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+            background-color: rgba(17, 25, 40, 0.5);
+            padding: 10px;
+            border-radius: 10px;
+          }
+        }
+      
+        .item {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          padding: 20px;
+          cursor: pointer;
+          border-bottom: 1px solid #dddddd35;
+      
+          .userImg {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            object-fit: cover;
+            background-color: #111;
+          }
+      
+          .texts {
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+      
+            span {
+              font-weight: bold;
+              color: white;
+            }
+      
+            p {
+              color: gray;
+              font-size: 14px;
+             
+            }
+          }
+        }
+      }
+      

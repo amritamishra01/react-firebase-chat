@@ -22,3 +22,106 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+# import { getFirestore } from "firebase/firestore";
+
+# const db = getFirestore(app);
+# ``` |
+# ```js
+# import { getFirestore, connectFirestoreEmulator } from "firebase/firestore";
+
+# const db = getFirestore(app);
+# connectFirestoreEmulator(db, "localhost", 8085);
+# ``` |
+
+# ---
+
+# ### 🔐 Authentication
+
+# | Feature | **Live Firebase** | **Using Emulator** |
+# |--------|------------------|------------------|
+# | **Import & Init** | `getAuth(app)` | `getAuth(app)` |
+# | **Connect** | _(none needed)_ | `connectAuthEmulator(auth, "http://localhost:9100");` |
+# | **Full Example** |
+# ```js
+# import { getAuth } from "firebase/auth";
+
+# const auth = getAuth(app);
+# ``` |
+# ```js
+# import { getAuth, connectAuthEmulator } from "firebase/auth";
+
+# const auth = getAuth(app);
+# connectAuthEmulator(auth, "http://localhost:9100");
+# ``` |
+
+# ---
+
+# ### 📁 Storage
+
+# | Feature | **Live Firebase** | **Using Emulator** |
+# |--------|------------------|------------------|
+# | **Import & Init** | `getStorage(app)` | `getStorage(app)` |
+# | **Connect** | _(none needed)_ | `connectStorageEmulator(storage, "localhost", 9200);` |
+# | **Full Example** |
+# ```js
+# import { getStorage } from "firebase/storage";
+
+# const storage = getStorage(app);
+# ``` |
+# ```js
+# import { getStorage, connectStorageEmulator } from "firebase/storage";
+
+# const storage = getStorage(app);
+# connectStorageEmulator(storage, "localhost", 9200);
+# ``` |
+
+# ---
+
+# ### 🔄 Realtime Database (if used)
+
+# | Feature | **Live Firebase** | **Using Emulator** |
+# |--------|------------------|------------------|
+# | **Import & Init** | `getDatabase(app)` | `getDatabase(app)` |
+# | **Connect** | _(none needed)_ | `connectDatabaseEmulator(database, "localhost", 9005);` |
+# | **Full Example** |
+# ```js
+# import { getDatabase } from "firebase/database";
+
+# const database = getDatabase(app);
+# ``` |
+# ```js
+# import { getDatabase, connectDatabaseEmulator } from "firebase/database";
+
+# const database = getDatabase(app);
+# connectDatabaseEmulator(database, "localhost", 9005);
+# ``` |
+
+# ---
+
+# ### 🌐 Hosting
+
+# | Feature | **Live Firebase** | **Using Emulator** |
+# |--------|------------------|------------------|
+# | **Access** | `https://your-project.web.app` | `http://localhost:5005` |
+# | **Deploy** | `firebase deploy --only hosting` | `firebase emulators:start` |
+# | **Notes** | Hosting on the web | Local server for testing |
+
+# ---
+
+# ### ✅ Best Practice Wrapper (Automatic Emulator Detection)
+
+# To auto-use emulators **only in dev**, wrap it like this:
+
+# ```js
+# if (location.hostname === "localhost") {
+#   connectAuthEmulator(auth, "http://localhost:9100");
+#   connectFirestoreEmulator(db, "localhost", 8085);
+#   connectStorageEmulator(storage, "localhost", 9200);
+#   connectDatabaseEmulator(database, "localhost", 9005);
+# }
+# Feature	Live Firebase	Using Emulator
+# Import & Init	getFirestore(app)	getFirestore(app)
+# Connect	(none needed)	connectFirestoreEmulator(db, "localhost", 8085);
+# Full Example
