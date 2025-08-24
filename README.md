@@ -8,7 +8,10 @@ The app supports user authentication, searching users, real-time chat, emoji sup
 
 🚀 Demo URL
 
-👉 Live Demo:react-firebase-chat-alpha-nine.vercel.app
+👉 ## 🚀 Demo URL
+
+👉 [Live Demo](https://react-firebase-chat-alpha-nine.vercel.app)
+
 
 ⚠️ This demo link will not fully work for image upload/sharing features because the app uses Firebase Emulator (local-only).
 
