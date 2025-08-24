@@ -14,33 +14,35 @@ The app supports user authentication, searching users, real-time chat, emoji sup
 
 🖼️ Screenshots & Features
 
-1️⃣ Authentication (Login & Signup)
+## 🚀 Features
 
-Users can sign in or sign up with Firebase Authentication. Profile picture uploads are supported during signup.
+### 1️⃣ Authentication (Login & Signup)  
+Users can sign in or sign up with Firebase Authentication. Profile picture uploads are supported during signup.  
 
-![Login Screenshot](https://github.com/amritamishra01/react-firebase-chat/blob/main/screenshots/Screenshot%202025-08-21%20115930.png)
+![Login Screenshot](https://github.com/amritamishra01/react-firebase-chat/blob/starter/Screenshot%202025-08-21%20115930.png)
 
+---
 
-2️⃣ User Search
-
+### 2️⃣ User Search  
 Search and add new users by username. Works across different browsers simulating different users.  
-(Example: One user in Chrome, another in Edge, another in Firefox)
+(Example: One user in Chrome, another in Edge, another in Firefox)  
 
-![Search Screenshot](https://github.com/amritamishra01/react-firebase-chat/blob/main/screenshots/Screenshot%202025-08-21%20120128.png)
+![Search Screenshot](https://github.com/amritamishra01/react-firebase-chat/blob/starter/Screenshot%202025-08-21%20120128.png)
 
+---
 
-3️⃣ Real-Time Chatting
+### 3️⃣ Real-Time Chatting  
+Send and receive messages instantly with real-time updates from Firebase Firestore.  
 
-Send and receive messages instantly with real-time updates from Firebase Firestore.
+![Chat Screenshot](https://github.com/amritamishra01/react-firebase-chat/blob/starter/Screenshot%202025-08-21%20121907.png)
 
-![Chat Screenshot](https://github.com/amritamishra01/react-firebase-chat/blob/main/screenshots/Screenshot%202025-08-21%20121907.png)
+---
 
+### 4️⃣ Image Sharing  
+Users can upload and share images in the chat. Currently, this works locally with Firebase Emulator, but in the future will be migrated to Cloudinary for global functionality.  
 
-4️⃣ Image Sharing
+![Image Sharing Screenshot](https://github.com/amritamishra01/react-firebase-chat/blob/starter/Screenshot%202025-08-21%20122035.png)
 
-Users can upload and share images in the chat. Currently, this works locally with Firebase Emulator, but in the future will be migrated to Cloudinary for global functionality.
-
-![Image Sharing Screenshot](https://github.com/amritamishra01/react-firebase-chat/blob/main/screenshots/Screenshot%202025-08-21%20122035.png)
 
 
 
