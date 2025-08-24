@@ -15,6 +15,18 @@ The app supports user authentication, searching users, real-time chat, emoji sup
 
 ⚠️ This demo link will not fully work for image upload/sharing features because the app uses Firebase Emulator (local-only).
 
+
+
+## ⚡ Running Locally with Firebase Emulator  
+
+👉 [Start Emulator](https://firebase.google.com/docs/emulator-suite)  
+
+Run this command in your terminal:  
+```bash
+firebase emulators:start --project demo-project
+
+
+
 🖼️ Screenshots & Features
 
 ## 🚀 Features
